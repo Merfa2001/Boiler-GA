@@ -1,32 +1,31 @@
-### Constrained Optimization using Genetic Algorithm (Boiler Design Problem)
+Sure, here is the English version of the text:
 
-#### Description:
-This repository contains an implementation of a Genetic Algorithm (GA) for solving a constrained optimization problem known as the Boiler Design Problem. The problem involves optimizing the design parameters of a boiler system while satisfying certain constraints.
+---
 
-#### Features:
-- Implementation of a GA to optimize the design parameters of a boiler system.
-- Constrained optimization problem with penalty functions for violations.
-- Visualization of optimization progress using matplotlib.
+### Objective Function
+The objective function \( f(x) \) is defined as follows:
+\[ f(x) = 0.6224 x_1 x_3 x_4 + 1.7781 x_2 x_3^2 + 3.1661 x_1^2 x_4 + 19.84 x_2^2 x_3 \]
+The goal is to find values for \( x_1 \), \( x_2 \), \( x_3 \), and \( x_4 \) that minimize this function.
 
-#### Usage:
-1. Clone the repository:
-   ```bash
-   git clone <[repository_url](https://github.com/Merfa2001/Boiler-GA.git)>
+### Constraints
+There are four constraints \( g_1(x) \) to \( g_4(x) \):
+1. \( g_1(x) = -x_1 - 0.0193x_3 \leq 0 \)
+2. \( g_2(x) = -x_2 - 0.00954x_3 \leq 0 \)
+3. \( g_3(x) = -\pi x_3^2 x_4 - \frac{4}{3} \pi x_3^3 + 1296000 \leq 0 \)
+4. \( g_4(x) = x_4 - 240 \leq 0 \)
 
-#### Requirements:
-- Python 3.x
-- numpy
-- matplotlib
+### Variable Bounds
+Variables also must be within certain bounds:
+- \( 0 < x_i < 100 \) for \( i = 1, 2 \)
+- \( 10 < x_i < 200 \) for \( i = 3, 4 \)
 
-#### Results:
+### Provided Image
+The image likely represents a mechanical system, which could be a depiction of part of the problem, possibly related to variables like \( x_3 \) and \( x_4 \) that appear to play dimensional mechanical roles such as radius or length.
 
-![download (2)](https://github.com/Merfa2001/Boiler-GA/assets/146805956/6e2e1b1d-ad84-4dc6-ba8e-cecd118865bf)
-
-![download (4)](https://github.com/Merfa2001/Boiler-GA/assets/146805956/a53390b5-d4a7-4c79-a1bb-5bfde81f855c)
+![326289572-cd3aad40-cbe2-47b6-b7f0-7b11a17e6a66](https://github.com/Merfa2001/Boiler-GA-Pso/assets/146805956/1890c087-ac65-47c2-b2dc-02611cf53688)
 
 
-#### Notes:
-- This implementation is for educational purposes and may not be suitable for large-scale or real-world applications without further optimization.
-- Adjustments to parameters and algorithm settings may be necessary depending on the specific problem requirements.
+### Solution Approach
+This type of problem is typically solved using nonlinear optimization methods, which could include numerical methods like gradient descent algorithms, evolutionary algorithms, or utilizing specialized software such as MATLAB or Python with libraries like SciPy. We will solve this problem using the genetic algorithm and PSO.
 
-Feel free to modify and adapt the code to suit your needs!
+---
