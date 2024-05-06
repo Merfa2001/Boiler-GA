@@ -1,7 +1,3 @@
-Sure, here is the English version of the text:
-
----
-
 ### Objective Function
 The objective function \( f(x) \) is defined as follows:
 \[ f(x) = 0.6224 x_1 x_3 x_4 + 1.7781 x_2 x_3^2 + 3.1661 x_1^2 x_4 + 19.84 x_2^2 x_3 \]
