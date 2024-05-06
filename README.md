@@ -24,4 +24,13 @@ The image likely represents a mechanical system, which could be a depiction of p
 ### Solution Approach
 This type of problem is typically solved using nonlinear optimization methods, which could include numerical methods like gradient descent algorithms, evolutionary algorithms, or utilizing specialized software such as MATLAB or Python with libraries like SciPy. We will solve this problem using the genetic algorithm and PSO.
 
+### Result
+GA result:
+
+![GA](https://github.com/Merfa2001/Boiler-GA-Pso/assets/146805956/fc32e118-1132-4133-81f1-82f6e8408cb1)
+
+PSO result:
+
+![PSO](https://github.com/Merfa2001/Boiler-GA-Pso/assets/146805956/0890d9f3-1cbe-4303-a855-7eeccfeeedb8)
+
 ---
